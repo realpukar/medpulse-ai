@@ -2,6 +2,8 @@
 Tests for Authentication: Registration, Login, and Profile
 """
 
+import uuid
+
 def test_login_demo_clinician(client):
     response = client.post(
         "/api/auth/login",
@@ -21,10 +23,11 @@ def test_login_invalid_password(client):
     assert response.status_code == 401
 
 def test_register_new_user(client):
+    unique_email = f"dr.carter.{uuid.uuid4().hex[:6]}@hospital.org"
     response = client.post(
         "/api/auth/register",
         json={
-            "email": "dr.carter@hospital.org",
+            "email": unique_email,
             "password": "SecurePassword123!",
             "full_name": "Dr. John Carter, MD",
             "role": "doctor"
@@ -32,5 +35,5 @@ def test_register_new_user(client):
     )
     assert response.status_code == 201
     data = response.json()
-    assert data["user"]["email"] == "dr.carter@hospital.org"
+    assert data["user"]["email"] == unique_email
     assert "access_token" in data
