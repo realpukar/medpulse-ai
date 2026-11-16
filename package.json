@@ -1,0 +1,23 @@
+{
+  "name": "medpulse-ai-workspace",
+  "version": "1.0.0",
+  "description": "MEDPULSE AI — Healthcare Intelligence & Predictive Readmission Modeling Platform",
+  "scripts": {
+    "dev:frontend": "npm --prefix frontend run dev",
+    "build:frontend": "npm --prefix frontend run build",
+    "start:frontend": "npm --prefix frontend start",
+    "dev:backend": "uvicorn app.main:app --app-dir backend --reload --port 8000",
+    "test:backend": "pytest backend/tests -v",
+    "train:ml": "python backend/ml/training/train_models.py"
+  },
+  "keywords": [
+    "healthcare",
+    "machine-learning",
+    "readmission-prediction",
+    "fastapi",
+    "nextjs",
+    "tailwind-css"
+  ],
+  "author": "MedPulse AI Engineering",
+  "license": "MIT"
+}

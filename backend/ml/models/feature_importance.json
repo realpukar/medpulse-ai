@@ -1,0 +1,62 @@
+[
+  {
+    "feature": "admission_type_Elective",
+    "importance": 0.1196
+  },
+  {
+    "feature": "comorbidity_score",
+    "importance": 0.1134
+  },
+  {
+    "feature": "age_group_20-40",
+    "importance": 0.0877
+  },
+  {
+    "feature": "number_inpatient",
+    "importance": 0.0748
+  },
+  {
+    "feature": "age_group_40-50",
+    "importance": 0.0519
+  },
+  {
+    "feature": "time_in_hospital",
+    "importance": 0.0495
+  },
+  {
+    "feature": "num_medications",
+    "importance": 0.0492
+  },
+  {
+    "feature": "age_group_0-20",
+    "importance": 0.0466
+  },
+  {
+    "feature": "primary_diagnosis_Circulatory",
+    "importance": 0.0442
+  },
+  {
+    "feature": "num_lab_procedures",
+    "importance": 0.038
+  },
+  {
+    "feature": "a1c_test_High",
+    "importance": 0.0301
+  },
+  {
+    "feature": "primary_diagnosis_Musculoskeletal",
+    "importance": 0.0296
+  },
+  {
+    "feature": "admission_type_Emergency",
+    "importance": 0.0241
+  },
+  {
+    "feature": "medication_change",
+    "importance": 0.024
+  },
+  {
+    "feature": "age_group_80-90",
+    "importance": 0.0231
+  }
+]

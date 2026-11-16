@@ -1,0 +1,124 @@
+{
+  "model_name": "Gradient Boosting",
+  "trained_at": "2026-11-17T02:59:22.307834",
+  "n_samples": 10000,
+  "n_features": 36,
+  "target": "30-day unplanned acute readmission",
+  "best_metrics": {
+    "accuracy": 0.826,
+    "precision": 0.8379,
+    "recall": 0.9209,
+    "f1_score": 0.8775,
+    "roc_auc": 0.9007,
+    "confusion_matrix": {
+      "true_negative": 406,
+      "false_positive": 241,
+      "false_negative": 107,
+      "true_positive": 1246
+    },
+    "roc_curve": [
+      {
+        "fpr": 0.0,
+        "tpr": 0.0
+      },
+      {
+        "fpr": 0.0263,
+        "tpr": 0.5314
+      },
+      {
+        "fpr": 0.051,
+        "tpr": 0.6157
+      },
+      {
+        "fpr": 0.0804,
+        "tpr": 0.6704
+      },
+      {
+        "fpr": 0.1097,
+        "tpr": 0.7258
+      },
+      {
+        "fpr": 0.1468,
+        "tpr": 0.762
+      },
+      {
+        "fpr": 0.1747,
+        "tpr": 0.7967
+      },
+      {
+        "fpr": 0.2133,
+        "tpr": 0.8307
+      },
+      {
+        "fpr": 0.2442,
+        "tpr": 0.8721
+      },
+      {
+        "fpr": 0.3076,
+        "tpr": 0.8936
+      },
+      {
+        "fpr": 0.3648,
+        "tpr": 0.9194
+      },
+      {
+        "fpr": 0.4266,
+        "tpr": 0.9372
+      },
+      {
+        "fpr": 0.4807,
+        "tpr": 0.9512
+      },
+      {
+        "fpr": 0.5348,
+        "tpr": 0.9667
+      },
+      {
+        "fpr": 0.6244,
+        "tpr": 0.983
+      },
+      {
+        "fpr": 0.779,
+        "tpr": 0.9956
+      }
+    ]
+  },
+  "feature_names": [
+    "time_in_hospital",
+    "num_lab_procedures",
+    "num_procedures",
+    "num_medications",
+    "number_outpatient",
+    "number_emergency",
+    "number_inpatient",
+    "comorbidity_score",
+    "diabetes_med",
+    "medication_change",
+    "age_group_0-20",
+    "age_group_20-40",
+    "age_group_40-50",
+    "age_group_50-60",
+    "age_group_60-70",
+    "age_group_70-80",
+    "age_group_80-90",
+    "age_group_90+",
+    "gender_Female",
+    "gender_Male",
+    "gender_Other",
+    "admission_type_Elective",
+    "admission_type_Emergency",
+    "admission_type_Trauma",
+    "admission_type_Urgent",
+    "primary_diagnosis_Circulatory",
+    "primary_diagnosis_Digestive",
+    "primary_diagnosis_Endocrine",
+    "primary_diagnosis_Injury",
+    "primary_diagnosis_Musculoskeletal",
+    "primary_diagnosis_Other",
+    "primary_diagnosis_Respiratory",
+    "glucose_test_High",
+    "glucose_test_Normal",
+    "a1c_test_High",
+    "a1c_test_Normal"
+  ]
+}
